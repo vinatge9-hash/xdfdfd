@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crimson Core Fitness - Transform Your Life</title>
+  <meta name="description" content="Crimson Core Fitness offers expert coaching, high-energy group classes, and nutrition guidance to help you reach your peak." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased text-gray-900">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Crimson Core Fitness</a>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-gray-800">About</a>
+            <a href="services.html" class="text-gray-600 hover:text-gray-800">Services</a>
+            <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden text-gray-800 hover:text-gray-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+          <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+          <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
+          <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero with background image -->
+    <section class="min-h-screen relative flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1757924284732-4189190321cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBmaXRuZXNzJTIwY2VudGVyJTIwd2l0aCUyMGVxdWlwbWVudCUyMGFuZCUyMHBlb3BsZSUyMHdvcmtpbmclMjBvdXR8ZW58MHwwfHx8MTc1OTY0NjQ3NXww&ixlib=rb-4.1.0&q=80&w=1080'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+      <div class="relative z-10 text-center text-white px-4 py-40 max-w-4xl">
+        <h1 class="font-[Oswald] text-4xl md:text-6xl font-bold mb-4">Transform Your Body, Transform Your Life</h1>
+        <p class="font-[Roboto] text-lg md:text-2xl mb-8">Crimson Core Fitness delivers expert coaching, high-energy classes, and nutrition guidance to help you reach your peak.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="services.html" class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition-all duration-300">Join Now</a>
+          <a href="contact.html" class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-[Oswald] mb-6 text-gray-800">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 rounded-lg p-6 flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="https://images.pexels.com/photos/7697781/pexels-photo-7697781.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Personal training session" class="h-16 w-16 object-contain" />
+            </div>
+            <h3 class="font-[Oswald] text-xl mb-2">Personal Training</h3>
+            <p class="text-gray-600">One-on-one coaching tailored to your goals with a certified trainer.</p>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="https://images.pexels.com/photos/8436689/pexels-photo-8436689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Group fitness classes" class="h-16 w-16 object-contain" />
+            </div>
+            <h3 class="font-[Oswald] text-xl mb-2">Group Classes</h3>
+            <p class="text-gray-600">High-energy classes to keep you motivated and accountable.</p>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img src="https://images.unsplash.com/photo-1634114581515-a7bd3bbbe49a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxudXRyaXRpb24lMjBjb2FjaGluZyUyMG1lZXRpbmclMjB3aXRoJTIwY2xpZW50fGVufDB8MHx8fDE3NTk2NDY0Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Nutrition coaching" class="h-16 w-16 object-contain" />
+            </div>
+            <h3 class="font-[Oswald] text-xl mb-2">Nutrition Guidance</h3>
+            <p class="text-gray-600">Customized nutrition plans to fuel your workouts and recovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold mb-3">Crimson Core Fitness</h4>
+          <p class="text-gray-300">Elevate your fitness with expert coaching and a supportive community.</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-semibold mb-3">Quick Links</h5>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+            <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-lg font-semibold mb-3">Hours</h5>
+          <p class="text-gray-300">Mon-Fri: 5:00 AM – 11:00 PM<br/>Sat-Sun: 6:00 AM – 10:00 PM</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-semibold mb-3">Follow</h5>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
