@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Crimson Core Fitness</title>
+  <meta name="description" content="Get in touch with Crimson Core Fitness to discuss programs, pricing, and memberships." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased text-gray-900">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Crimson Core Fitness</a>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-gray-800">About</a>
+            <a href="services.html" class="text-gray-600 hover:text-gray-800">Services</a>
+            <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden text-gray-800 hover:text-gray-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+          <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+          <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
+          <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="min-h-screen relative flex items-center justify-center" style="background-image: url('https://pixabay.com/get/gad4277a85f817d683e66ab6d7d5b326c3878a3138fe1c5d1ee2953587d41c0c3f5858135fbc54e0ba9a3d5f2a32b99db_640.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+      <div class="relative z-10 text-center text-white px-4 py-40 max-w-3xl">
+        <h1 class="font-[Oswald] text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+        <p class="font-[Roboto] text-lg md:text-xl mb-6">Have questions or ready to start? Send us a message and we’ll reply promptly.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent (demo).');">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Full Name</label>
+              <input type="text" name="name" required class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:ring-2 focus:ring-indigo-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" name="email" required class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:ring-2 focus:ring-indigo-500"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Phone (optional)</label>
+            <input type="tel" name="phone" class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:ring-2 focus:ring-indigo-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Your Message</label>
+            <textarea name="message" rows="5" required class="mt-1 w-full rounded-md border-gray-300 shadow-sm focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-500 transition-all duration-300">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-400 text-center">© 2025 Crimson Core Fitness. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
